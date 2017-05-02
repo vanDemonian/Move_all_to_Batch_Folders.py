@@ -13,8 +13,12 @@ folderSize = fS = 17568
 
 fileExt = ".jpg"
 
-inputDir = 		"NAVARRE_1920_slice"
-destination = 	"NAVARRE_1920_Slicebatch"
+#place this script at the same directory level as the input directory 
+inputDir = 		"STCLAIR_SLICE_OUTPUTS"
+#give destination folder a name
+destination = 	"STCLAIR_Slicebatch"
+os.mkdir(destination)
+
 
 folder_One = 	'000001-017568'
 folder_Two =	'017569-035136'
@@ -29,6 +33,7 @@ folder_Ten = 	'158113-175680'
 folder_Eleven =	'175681-193248'
 folder_Twelve =	'193249-210816'
 folder_Thirteen = '210817+++++'
+
 
 
 for root, dirs, files in os.walk(inputDir):
